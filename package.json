@@ -1,11 +1,15 @@
 {
-  "name": "vue-catalogue",
+  "name": "vue-catalog",
   "version": "0.0.1",
   "main": "src/Catalog.vue",
   "license": "MIT",
   "scripts": {
     "serve-demo": "NODE_ENV=development webpack-dev-server",
     "build": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Euron-X/vue-catalog.git"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
