@@ -120,7 +120,10 @@ export default {
       const offsetParentScrollTop = this.offsetParent === window ? document.documentElement.scrollTop
         : this.offsetParent.scrollTop
       const reverseList = [...this.catalogList].reverse()
-      const matchedIndex = reverseList.findIndex(item => offsetParentScrollTop + this.distance >= item.offsetTop) || 0
+      let matchedIndex = reverseList.findIndex(item => offsetParentScrollTop + this.distance >= item.offsetTop)
+      if (matchedIndex === -1) {
+        matchedIndex = this.catalogList.length - 1
+      }
       this.activeAnchorIndex = this.catalogList.length - matchedIndex - 1
     },
   }
