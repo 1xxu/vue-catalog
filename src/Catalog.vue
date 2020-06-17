@@ -79,7 +79,7 @@ export default {
       if (catalogItems) {
         const activeAnchor = catalogItems[index]
         const catalogBody = this.$refs.catalogBody
-        if (activeAnchor.offsetTop > catalogBody.clientHeight / 2) {
+        if (activeAnchor.offsetTop > catalogBody.clientHeight / 2 || this.maxHeight) {
           this.$refs.catalogList.style.transform = `translateY(${catalogBody.clientHeight / 2 - activeAnchor.offsetTop}px)`
         } else {
           this.$refs.catalogList.style.transform = null
