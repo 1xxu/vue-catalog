@@ -132,13 +132,13 @@ export default {
 
 <style lang="scss">
 @for $i from 2 through 6 {
-  .lv#{$i} {
+  .catalogItem.lv#{$i} {
     padding-left: $i * 14px - 7px;
     font-size: 14px;
   }
 }
 
-.lv1 {
+.catalogItem.lv1 {
   padding-left: 5px;
   font-size: 16px;
 }
