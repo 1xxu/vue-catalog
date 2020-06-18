@@ -105,7 +105,7 @@ export default {
     getTagList () {
       let id = 0;
       if (!this.contentWrapperElement) return
-      const children = this.contentWrapperElement.querySelectorAll(`${this.content} > *`)
+      const children = this.contentWrapperElement.querySelectorAll(`*`)
       children.forEach(child => {
         const tagName = child.tagName.toLowerCase()
         const index = this.levels.findIndex(item => item === tagName)
