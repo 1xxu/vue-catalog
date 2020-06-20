@@ -1,5 +1,5 @@
 <template>
-  <div class="catalog">
+  <div v-if="catalogList.length" class="catalog">
     <div class="catalogTitle">{{ title }}</div>
     <div ref="catalogBody" class="catalogBody" :style="computedStyle">
       <div ref="catalogList" class="catalogList">
