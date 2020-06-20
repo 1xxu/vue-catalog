@@ -1,5 +1,6 @@
 <template>
   <div class="catalog">
+    <div class="catalogTitle">{{ title }}</div>
     <div ref="catalogBody" class="catalogBody" :style="computedStyle">
       <div ref="catalogList" class="catalogList">
         <div
@@ -46,6 +47,10 @@ export default {
       default: null,
       type: String,
     },
+    title: {
+      default: '目录',
+      type: String,
+    }
   },
   data () {
     return {
@@ -144,6 +149,13 @@ export default {
 }
 
 .catalog {
+  .catalogTitle {
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
   .catalogBody {
     position: relative;
 

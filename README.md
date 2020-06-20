@@ -1,5 +1,10 @@
+## Usage
+
+> npm i vue-side-catalogue
+
+``` js
 <template>
-  <div style="display: flex;">
+  <div>
     <div id="content">
       <h1>探究下babel-preset-env的使用</h1>
       <p>不会讲其余内容。</p>
@@ -9,16 +14,17 @@
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum architecto reiciendis voluptates odit excepturi accusantium nam quaerat tenetur iste quos, beatae libero explicabo quas velit blanditiis. Doloribus aspernatur ad sequi?</p>
       <h3>This is h3</h3>
     </div>
-    <div style="position: fixed; top: 0; right: 100px;"><catalog content="#content" max-height="200px" /></div>
+    <Catalog content="#content">
   </div>
 </template>
 
-<script>
-import Catalog from './Catalog'
+import Catalog from 'vue-side-catalogue'
 
 export default {
   components: {
     Catalog,
   },
 }
-</script>
+```
+
+![Image of Yaktocat](./images/1.png)
